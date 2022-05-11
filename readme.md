@@ -1,9 +1,5 @@
-<center>
 <img src="./web-app/twitter_logo.png" width=100 />
-<br />
-<br />
 <h1>Twitter Sentiment Analysis</h1>
-</center>
 
 ## Introduction
 
