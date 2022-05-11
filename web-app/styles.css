@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Sora&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Domine&display=swap");
+
+body {
+  margin: 0;
+  background-color: #121212;
+  font-family: "Sora", sans-serif;
+  height: 100vh;
+  width: 100%;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  background-image: url("./twitter_logo.png");
+  background-repeat: no-repeat;
+  background-size: 10%;
+  background-position-x: 61%;
+  background-position-y: 1%;
+  color: #aab8c2;
+}
+
+.small {
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transform: scale(0.75);
+  margin-top: 50px;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 15px;
+}
+
+.input-field {
+  width: 40%;
+  padding: 15px;
+  border-radius: 25px;
+  margin: 15px;
+  font-size: 20px;
+  font-family: "Sora", serif;
+  border: none;
+  outline: none;
+}
+
+.button {
+  width: 200px;
+  padding: 15px;
+  background-color: #1da1f2;
+  border: none;
+  border-radius: 100px;
+  margin: 15px;
+  font-size: 20px;
+  font-family: "Sora", serif;
+  color: #f5f8fa;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.button:hover {
+  background-color: #4eb0ed;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.button:active {
+  background-color: #009dff;
+  transform: scale(0.975);
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -20px;
+  width: 50%;
+}
+
+.result-text {
+  font-family: "Domine", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.red {
+  color: #d2222d;
+}
+
+.green {
+  color: #238823;
+}
+
+.tweet {
+  width: 50%;
+  transform: scale(0.75);
+}
+
+.subtext-white {
+  color: #f5f8fa;
+}
+
+.subtext-black {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: "Sora", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 293px;
+  text-align: center;
+}
+
+.icon {
+  transform: scale(0.6);
+}
+
+.copyright {
+  font-family: "Sora", sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.twitter-trademark {
+  font-size: 0.75rem;
+}

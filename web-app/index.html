@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Sentiment Analysis</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <script src="//twemoji.maxcdn.com/v/latest/twemoji.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="image"></div>
+      <div id="search" class="search">
+        <div class="heading">
+          What's the Sen<span id="subtext">tim</span>ent?
+        </div>
+        <input
+          class="input-field"
+          id="url_field"
+          type="text"
+          placeholder="Enter a Tweet URL"
+        />
+        <button class="button" type="button" onclick="fetchTweet()">
+          Find sentiment!
+        </button>
+      </div>
+      <div id="loader"></div>
+      <div class="data">
+        <div id="result"></div>
+        <div id="tweet" class="tweet">
+          <script
+            async
+            src="https://platform.twitter.com/widgets.js"
+            charset="utf-8"
+          ></script>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-text">
+        <spna>Made with </spna>
+        <span id="love" class="icon"></span>
+        <span> in </span><span id="india" class="icon"></span>
+      </div>
+      <h3 class="copyright">
+        &#169; Copyright 2022.
+        <br />
+        <span class="twitter-trademark"
+          >Twitter logo and Twitter are the registered trademark of Twitter,
+          Inc.</span
+        >
+      </h3>
+    </div>
+  </body>
+</html>
