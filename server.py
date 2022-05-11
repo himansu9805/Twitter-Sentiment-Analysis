@@ -33,7 +33,7 @@ async def get_tweet(info: Request):
     req_info = await info.json()
     tweet_id = req_info["url"].split("/")[5]
     headers = {"Authorization": "Bearer {}".format(
-        "AAAAAAAAAAAAAAAAAAAAAOlLcQEAAAAAU4CeF9EHclY2XP2fpGPAVJDb2CE%3DoVfqWcT8X2YO5gkt63srw0rf5wy61DEBqhQje2y8wjnqXXhhPZ")}
+        "Paste your own OAuthToken")}
     response = requests.get(
         "https://api.twitter.com/2/tweets/{}".format(tweet_id), headers=headers)
     content = response.json()
